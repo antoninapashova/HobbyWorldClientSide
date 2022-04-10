@@ -1,0 +1,63 @@
+<main>
+    <form  #form="ngForm" action="" method="post" (ngSubmit)="register(form)" appCustomValidator>
+        <h2>Register</h2>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input #usernameInput="ngModel" ngModel type="text" name="username" id="username" required minlength="4">
+            <ng-container *ngIf="usernameInput.touched">
+                <p *ngIf="usernameInput.errors?.['required']" class="error">Username is required</p>
+                <p *ngIf="usernameInput.errors?.['minlength']" class="error">Username must be more than 4 symbols</p>
+            </ng-container>
+        </div>
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input #firstNameInput="ngModel" ngModel type="text" name="first_name" id="first_name" required minlength="4">
+            <ng-container *ngIf="firstNameInput.touched">
+                <p *ngIf="firstNameInput.errors?.['required']" class="error">First name is required</p>
+                <p *ngIf="firstNameInput.errors?.['minlength']" class="error">First name must be more than 4 symbols</p>
+            </ng-container>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last name</label>
+            <input #lastNameInput="ngModel" ngModel type="text" name="last_name" id="last_name" required minlength="4">
+            <ng-container *ngIf="lastNameInput.touched">
+                <p *ngIf="lastNameInput.errors?.['required']" class="error">Last Name is required</p>
+                <p *ngIf="lastNameInput.errors?.['minlength']" class="error">Last name must be more than 4 characters</p>
+            </ng-container>
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input #emailInput="ngModel" ngModel type="text" name="email" id="email" required email>
+            <ng-container *ngIf="emailInput.touched">
+                <p *ngIf="emailInput.errors?.['required']" class="error">Email is required</p>
+                <p *ngIf="emailInput.errors?.['email']" class="error">Invalid email</p>
+            </ng-container>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input #passwordInput="ngModel" ngModel type="password" name="password" required minlength="4">
+            <ng-container *ngIf="passwordInput.touched">
+                <p *ngIf="passwordInput.errors?.['required']" class="error">Password is required</p>
+                <p *ngIf="passwordInput.errors?.['minlength']" class="error">Pssword must be more than 4 characters</p>
+            </ng-container>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm_password">Confirm password</label>
+            <input #confirmPasswordInput="ngModel" ngModel type="password" name="confirm_password" id="confirm_password" required minlength="4"
+            >
+            <ng-container *ngIf="confirmPasswordInput.touched">
+                <p *ngIf="confirmPasswordInput.errors?.['required']" class="error">Confirm Password is required</p>
+                <p *ngIf="confirmPasswordInput.errors?.['minlength']" class="error">Confirm password must be more than 4 characters</p>
+                
+            </ng-container>  
+        </div>
+        <button>Register</button>
+    </form>
+
+    <div class="info">
+        <p>Sign up to share your hobby with the world and find out how others do it</p>
+    </div>
+    
+</main>

@@ -1,0 +1,12 @@
+html{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: wheat;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}

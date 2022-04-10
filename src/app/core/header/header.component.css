@@ -1,0 +1,182 @@
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+  /* header */
+  
+.header {
+    background-color: turquoise;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;  
+    padding: 10px 20px;
+    width: 90%;
+    margin: auto;
+    height: 75px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    display: block;
+}
+  
+li{
+    list-style: none;
+    display:inline-block;
+}
+
+header img{
+    width: 5%;
+    height: 85%;
+}
+
+p{
+    display: inline-block;
+}
+  
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+  
+.header li a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: wheat;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+    background-color: turquoise;
+    position: relative;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  .search{
+    margin: auto;
+    background-color: burlywood;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+.search input{
+   height: 25px;
+    border-radius: 10px;
+  }
+  
+i{
+    margin-right: 5px;
+  }
+  
+.logout{
+    border-radius: 10px;
+    background-color: white;
+    color: turquoise;
+    align-self: center;
+    margin-top: 20px;
+}
+
+  
+@media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  

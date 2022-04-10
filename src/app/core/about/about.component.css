@@ -1,0 +1,35 @@
+.advertisment{
+    width: 61%;
+    margin-left: 147px;
+    font-size: 27px;
+    color: white;
+  }
+  .questions{
+    background-color: #f8f8f6;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .bakground{
+    width: 59rem;
+    height: 38rem;
+  }
+  
+  .bakground_2{   
+     width: 42rem;
+     height: 38rem;
+  }
+  .steps{
+    background-color: thistle;
+    font-size: 30px;
+    width: 34%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    width: 43%;
+    height: 27rem;
+  }
+  
+  .steps li{
+    margin-top: 12px;
+  }

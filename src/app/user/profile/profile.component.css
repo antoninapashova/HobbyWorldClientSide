@@ -1,0 +1,98 @@
+.container{
+    user-select: none;
+    margin: 40px auto;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  }
+
+  p{
+    margin:0px 5px 5px;
+    font-size: 20px;
+  }
+
+  .user_info{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .cover-photo{
+   
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .profile{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 15px 0 0 5px;
+    border: 1px solid #1f1a32;
+    padding: 7px;
+    background: #292343;
+  }
+  .profile-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  .about{
+    margin-top: 30px;
+    line-height:12px;
+  }
+  button{
+    margin: 10px 0 40px 0;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    width: 100px;
+  }
+  .msg-btn, .follow-btn{
+    background: #03bfbc;
+    border: 1px solid #03bfbc;
+    padding: 10px 25px;
+    color: #231e39;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+  }
+ 
+  .cover-photo{
+   
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .profile{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 15px 0 0 5px;
+    border: 1px solid #1f1a32;
+    padding: 7px;
+    background: #292343;
+  }
+  .profile-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 9px;
+  }
+  .about{
+    margin-top: 30px;
+    line-height:12px;
+  }
+  button{
+    margin: 10px 0 40px 0;
+  }
+  .msg-btn, .follow-btn{
+    background: #03bfbc;
+    border: 1px solid #03bfbc;
+    padding: 10px 25px;
+    color: #231e39;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+  }
+ 

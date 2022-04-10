@@ -1,0 +1,48 @@
+<main>
+    <form #form="ngForm" action="" method="post" class="add-hobby-form" (ngSubmit)="addHobby(form)">
+        <div class="form-title">
+            <h2>Add new hobby</h2>
+        </div>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input #titleInput="ngModel" ngModel  type="text" name="title" id="title" required minlength="4">
+            <ng-container *ngIf="titleInput.touched">
+                <p *ngIf="titleInput.errors?.['required']" class="error">Title is required</p>
+                <p *ngIf="titleInput.errors?.['minlength']" class="error">Title must be more than 4 symbols</p>
+            </ng-container>
+        </div>
+        <div class="form-group images">
+            <label #photosInput="ngModel" ngModel for="photo" required>Photo</label>
+            <input  #photoInput="ngModel" ngModel type="file" name="photo" id="photo" multiple>
+            <ng-container *ngIf="photoInput.touched">
+                <p *ngIf="titleInput.errors?.['required']" class="error">Title is required</p>
+                <p *ngIf="titleInput.errors?.['minlength']" class="error">Title must be more than 4 symbols</p>
+            </ng-container>
+            <!-- <div [innerHtml]='msg' *ngIf="msg"></div>
+            <div><img [src]="url" *ngIf="url"></div>
+            <p><input type="file" (change)="selectFile($event)" multiple></p> -->
+
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select #categoryInput="ngModel" ngModel name="category" id="category" required>
+                <option value="biking">Biking</option>
+                <option value="flowers">Flowers</option>
+                <option value="photography">Photography</option>
+                <option value="painting">Painting</option>
+            </select>
+            <ng-container *ngIf="categoryInput.touched">
+                <p *ngIf="categoryInput.errors?.['required']" class="error">Category is required</p>
+            </ng-container>
+        </div>
+        <div class="form-group">
+            <label for="decsription">Description</label>
+            <textarea #decsriptionInput = "ngModel" ngModel name="description" id="description" cols="30" rows="10" required></textarea>
+            <ng-container *ngIf="decsriptionInput.touched">
+                <p *ngIf="decsriptionInput.errors?.['required']" class="error">Description is required</p>
+            </ng-container>
+        </div>
+        <button>Add</button>
+    </form>
+</main>
+

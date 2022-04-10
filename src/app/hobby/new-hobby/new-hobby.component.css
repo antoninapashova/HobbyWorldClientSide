@@ -1,0 +1,60 @@
+form{
+    background-color: cornsilk;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top:20px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+ form h2{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+form .form-group{
+   margin-bottom: 20px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input{
+    width: 145%;
+    border-radius: 5px;
+    height: 20px;
+    background-color: cornsilk;;
+}
+
+
+form textarea{
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: cornsilk;
+  
+}
+.add-hobby-form textarea{
+  margin-left: 10px;
+  border-radius: 5px;
+    
+}
+
+.add-hobby-form label{
+    color: turquoise;
+    font-size: 20px;
+}
+
+form button{
+    width: 40%;
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 20px;
+    font-weight: 900;
+   
+} 
